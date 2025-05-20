@@ -5,3 +5,12 @@ Use the [NetworkStream](https://learn.microsoft.com/en-us/dotnet/api/system.net.
 - Request line (contains HTTP method, request URI, and HTTP version)
 - Headers
 - Message Body (Data being sent)
+
+```html
+<REQUEST LINE>\r\n
+<HEADER 1>\r\n
+<HEADER 2>\r\n
+...
+\r\n
+<BODY (optional)>
+```
