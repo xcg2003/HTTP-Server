@@ -1,0 +1,14 @@
+/Users/xaviergraham/Developer/web-dev/webServer/bin/Debug/net9.0/webServer
+/Users/xaviergraham/Developer/web-dev/webServer/bin/Debug/net9.0/webServer.deps.json
+/Users/xaviergraham/Developer/web-dev/webServer/bin/Debug/net9.0/webServer.runtimeconfig.json
+/Users/xaviergraham/Developer/web-dev/webServer/bin/Debug/net9.0/webServer.dll
+/Users/xaviergraham/Developer/web-dev/webServer/bin/Debug/net9.0/webServer.pdb
+/Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/webServer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/webServer.AssemblyInfoInputs.cache
+/Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/webServer.AssemblyInfo.cs
+/Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/webServer.csproj.CoreCompileInputs.cache
+/Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/webServer.dll
+/Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/refint/webServer.dll
+/Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/webServer.pdb
+/Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/webServer.genruntimeconfig.cache
+/Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/ref/webServer.dll
