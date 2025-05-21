@@ -1,6 +1,7 @@
 using System;
 using System.Net.Sockets;
 using System.Reflection.PortableExecutable;
+using System.Text;
 
 namespace WebServer
 {
@@ -14,8 +15,19 @@ namespace WebServer
             // Revice the data from the client and store it in the buffer
             int bytesReceived = clientSocket.Receive(buffer);
 
-            // Convert the byte array to a string
-            //String requestString = System.Text.Encoding.UTF8.GetDecoder();
+           // set up NetworkStream to recive and decode request
+
+
+			//seprate the request line, headers, and message body
+			
+			
         }
+
+		private void DisplayRequest(string requestLine, string requestHeaders, string requestBody)
+		{
+			Console.WriteLine("Test for now");
+		}
     }
+
+
 }

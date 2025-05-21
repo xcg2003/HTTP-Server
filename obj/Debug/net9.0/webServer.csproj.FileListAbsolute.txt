@@ -12,3 +12,4 @@
 /Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/webServer.pdb
 /Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/webServer.genruntimeconfig.cache
 /Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/ref/webServer.dll
+/Users/xaviergraham/Developer/web-dev/webServer/obj/Debug/net9.0/webServer.sourcelink.json
