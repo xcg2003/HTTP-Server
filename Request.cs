@@ -15,12 +15,12 @@ namespace WebServer
             // Revice the data from the client and store it in the buffer
             int bytesReceived = clientSocket.Receive(buffer);
 
-           // set up NetworkStream to recive and decode request
+            // Convert the byte array to a string
+            string requestString = Encoding.UTF8.GetString(buffer, 0, bytesReceived);
 
-
+            Console.WriteLine("Request received: {0}", requestString);
 			//seprate the request line, headers, and message body
-			
-			
+
         }
 
 		private void DisplayRequest(string requestLine, string requestHeaders, string requestBody)

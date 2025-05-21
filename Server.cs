@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Net.Sockets;
+using System.Reflection.Metadata;
 using System.Security.Cryptography.X509Certificates;
 
 
@@ -41,6 +42,13 @@ namespace WebServer
                 Console.WriteLine("Client connected.");
 
                 //Handle request
+                Request request = new Request();
+                request.ParseRequest(connectedSocket);
+                if (!connectedSocket.Connected)
+                {
+                    Console.WriteLine("Client disconnected.");
+                    break;
+                }
 
                 //handle response
             }
