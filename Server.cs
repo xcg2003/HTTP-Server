@@ -13,7 +13,7 @@ namespace WebServer
         private Socket? listener;
 
         //bind socket to port
-        public Socket Start(int port, IPEndPoint localEndPoint)
+        public Socket Start(IPEndPoint localEndPoint)
         {
             listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
@@ -24,13 +24,19 @@ namespace WebServer
         }
 
         //listen for incoming connections
-        public void Run(int port)
+        public void Run(int port, string fileToDisplay)
         {
+            //create request & response objects for parsing and sending
+            Request request = new Request();
+            Response response = new Response();
+
+            //create a boolean to control the server loop
             bool isRunning = true;
+
             //create local endpoint
             IPEndPoint localEndPoint = new IPEndPoint(IPAddress.Any, port);
 
-            Socket listnerSocket = Start(port, localEndPoint);
+            Socket listnerSocket = Start(localEndPoint);
             listnerSocket.Listen();
             Console.WriteLine("Server is listening on port {0}...", port);
 
@@ -42,28 +48,18 @@ namespace WebServer
                 Console.WriteLine("Client connected.");
 
                 //Handle request
-                Request request = new Request();
-                request.ParseRequest(connectedSocket);
-                if (!connectedSocket.Connected)
-                {
-                    Console.WriteLine("Client disconnected.");
-                    break;
-                }
+                request.ParseRequest(connectedSocket);    
 
                 //handle response
+                response.SendResponse(connectedSocket, fileToDisplay);
             }
 
             // shut off listener
             listnerSocket.Shutdown(SocketShutdown.Both);
             listnerSocket.Close();
             Console.WriteLine("Server is shutting down.");
-        }   
-
-        //parse incoming request
-
-        //create response
-
-        //send response
+        }  
+        
     }
 
 }

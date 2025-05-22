@@ -8,7 +8,7 @@ namespace WebServer
         static void Main(string[] args)
         {
             Server server = new Server();
-            server.Run(8888);
+            server.Run(8888, "index.html");
             // Your code here
         }
     }
